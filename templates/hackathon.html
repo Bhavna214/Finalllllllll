@@ -6,14 +6,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css" rel="stylesheet">
-<link rel="stylesheet" href="../static/style.css">
+<link rel="stylesheet" href="../src/style.css">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ti-icons@0.1.2/css/themify-icons.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 <link
-href="{{url_for('static', filename='style.css')}}"
+href="../src/style.css"
 rel="stylesheet"
 />
 <header class="header">
@@ -29,10 +29,7 @@ rel="stylesheet"
         </nav>
 </header>   
     <div class="row details">
-        <div>
-            <img class="banner" src="../static/hackniche-2023.webp">
-        </div>
-        
+        <img class="banner" src="../src/hackniche-2023.webp">
         <div id="left_box">
             <section id="description" class="content">
                 <h3>Description</h3>
@@ -42,15 +39,29 @@ rel="stylesheet"
             </section>
             <section id="schedule" class="content">
                 <h3>Schedule</h3>
-                <p>Date: 19 Feb 2023 - 20 Feb 2023</p>
-                <p>Time: 7:30 AM - 5:00 PM</p>
+                <p><b>Date</b>: 17/02/2023 - 18/02/2023</p>
+                <p><b>Time</b>: 7:30AM : 5PM</p>
             </section>
-            <!-- <h3>Partner(s)</h3> -->
+            <!-- <h3>Partner(s)</h3>
+            <div class="partners">
+                <div class="partner">
+                    <h3>Title Sponsor</h3>
+                    <h2>Celo</h2>
+                </div>
+                <div class="partner">
+                    <h3>Media partner</h3>
+                    <h2>BeReal</h2>
+                </div>
+                <div class="partner">
+                    <h3>Powered By</h3>
+                    <h2>Sleepy Owl</h2>
+                </div>
+            </div> -->
         </div>
         <div id="right_box">
             <section id="venue" class="content">
                 <h3>Venue</h3>
-                <p>Dwarkadas J. Sanghvi College of Engineering, Vile Parle(West), Mumbai</p>
+                <p>SVKM's Dwarkadas J. Sanghvi College of Engineering, Vile Parle(West), Mumbai</p>
             </section>
             <section id="domains" class="content">
                 <h3>Domain(s)</h3>
@@ -59,31 +70,16 @@ rel="stylesheet"
                 <button class="domain">Iot</button>
                 <button class="domain">AI/ML</button>
                 <button class="domain">Blockchain</button>
+
+                <button><a href = {{ url_for('create') }}>Create a team</a></button>
+                <button><a href = {{ url_for('join') }}>Join a team</a></button>
             </section>
-            <section id="register" class="content">
-                <a href=""><button id="register_button" class="btn">Register</button></a>
-            </section>
+
         </div>
-        
-        <!-- <div class="partners row">
-            <div class="partner">
-                <h3>Title Sponsor</h3>
-                <h2>Celo</h2>
-            </div>
-            <div class="partner">
-                <h3>Media partner</h3>
-                <h2>BeReal</h2>
-            </div>
-            <div class="partner">
-                <h3>Powered By</h3>
-                <h2>Sleepy Owl</h2>
-            </div>
-        </div> -->
     </div>
 <style type="text/css">
     .details{
-        padding: 0 20px 20px 20px;
-        margin-left: 10px;
+        padding: 20px;
         justify-content: flex;
         flex-direction: row;
     }
@@ -91,31 +87,27 @@ rel="stylesheet"
         border-radius: 30px;
         height: 70%;
         width: 100%;
-        margin-top: 100px;
+        margin-top: 70px;
     }
     #left_box{
         padding: 20px;
-        width: 60%;
+        width: 65%;
     }
     /* .partners{
-        width: 100%;
-        padding-left: 20px;
+        justify-content: flex;
+        flex-direction: row;
     }
     .partner{
-        padding-right:10%;
         justify-content: center;
     } */
     #right_box{
-        padding: 20px;
+        padding-top: 20px;
         width:35%;
-        /* right: 0;
-        top: 0; */
-    }
-    h3{
-        font-weight: 800;
+        right: 0;
+        top: 0;
     }
     button{
-        background-color: #a7a6a6;
+        background-color: #444;
         outline: none;
         border: none;
         border-radius: 5rem;
@@ -127,22 +119,8 @@ rel="stylesheet"
         font-size: 1.7rem;
         box-shadow: 0 .2rem .5rem rgba(0,0,0,.3);
     }
-    #register_button{
-        position: relative;
-    }
-    .register{
-        position: absolute;
-        padding-top: 10rem;
-    }
-    p{
-        font-size: medium;
-    }
     #domains{
-        padding: 10px 10px 40px 0;
-        justify-items: space-around;
-    }
-    .domain{
-        margin: 5px;
+        justify-content: space-between;
     }
 </style>
 </body>

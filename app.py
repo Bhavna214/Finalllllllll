@@ -126,7 +126,7 @@ def cllg():
 
 @app.route('/coding')
 def coding():
-     return render_template("coding.html")
+     return render_template("Editor.html")
 
 
 @app.route('/quiz')
@@ -246,9 +246,10 @@ class FaceRecognition:
         self.encode_faces()
 
     def encode_faces(self):
-        for image in os.listdir('static/faces'):
-            face_image = face_recognition.load_image_file(f"static/faces/{image}")
+        for image in os.listdir('src/faces'):
+            face_image = face_recognition.load_image_file(f"src/faces/{image}")
             face_encoding = face_recognition.face_encodings(face_image)[0]
+            print(face_encoding)
 
             self.known_face_encodings.append(face_encoding)
             self.known_face_names.append(image)
@@ -324,9 +325,12 @@ def quizzing():
     fr.run_recognition()
     return render_template("quizzing.html")
 
-
-    
-
+@app.route('/my-hack')
+def my_hack():
+    return render_template('my_hack.html')
+@app.route('/analytics')
+def analytics():
+    return render_template('analytics.html')
 
 if __name__ == "_main_":
     # db.create_all()
