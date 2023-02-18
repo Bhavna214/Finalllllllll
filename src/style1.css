@@ -1,0 +1,206 @@
+/**/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&display=swap');
+
+:root{
+  --color:#6C5CE7;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/*Resume template dummy viewing section*/
+
+#template_view{
+    margin-top: 4.5%;
+}
+
+#template_view p{
+    text-align: left;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+}
+
+#template_view img{
+    width: 100%;
+}
+
+/* .b_resume {
+    padding: 20px;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+    width: 100%;
+    height: 50px;
+
+}
+
+.b_resume_btn{
+    width: 100%;
+    height: 60px;
+    padding: 12px; 
+    font-size: 20px;
+} */
+
+#templates{
+    margin-top: 5%;
+    padding: 20px;
+    background-color: rgb(230, 230, 230)
+}
+#templates img {
+    padding: 15px;
+}
+
+#templates h2{
+    text-align: left;
+    padding-top: 20px;
+    font-weight: 700;
+}
+#templates p{
+    padding-bottom: 20px;
+}
+
+.zoom:hover{
+    -ms-transform: scale(1.09); /* IE 9 */
+    -webkit-transform: scale(1.09); /* Safari 3-8 */
+    transform: scale(1.09);
+    transition: all .5s ease;
+}
+
+
+
+/*for popup*/
+
+.overlay {
+    position: fixed;
+    top: 0px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 15;
+    overflow: auto;
+}
+
+    .overlay:target {
+        visibility: visible;
+        opacity: 1;
+    }
+
+.popup {
+    margin: 70px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    width: 80%;
+    
+    position: relative;
+    transition: all 5s ease-in-out;
+}
+
+    .popup h2 {
+        margin-top: 0;
+        color: #333;
+        font-family: Tahoma, Arial, sans-serif;
+    }
+
+    .popup .close {
+        position: absolute;
+        top: 20px;
+        right: 30px;
+        transition: all 200ms;
+        font-size: 30px;
+        font-weight: bold;
+        text-decoration: none;
+        color: #333;
+    }
+
+        .popup .close:hover {
+            color: #41004A;
+        }
+
+    .popup .content {
+        max-height: 30%;
+        overflow: auto;
+    }
+
+@media screen and (max-width: 700px) {
+
+    .popup {
+        width: 90%;
+    }
+}
+
+
+
+
+/*in resume section*/
+.h_color{
+    background-color: rgb(247, 247, 247);
+}
+
+#resume_1{
+    padding: 20px;
+    margin-top:5%;
+}
+#resume_2{
+    padding: 20px;
+    margin-top:5%;
+}
+
+.sidesection{
+    color: white;
+    padding: 20px
+}
+
+.subsection{
+    background-image: url("../img/resume_1/01_dark_back\ \(1\).png");
+    height: 50px;
+    width: 100%;
+    padding: 8px;
+}
+
+
+#resume_1 h2{
+    font-weight: 600px;
+
+}
+h2{
+
+}
+.header{
+    color: var(--color);
+}
+.res{
+    width: 300px;
+    margin:40px 60px;
+}
+.bleh{
+    margin-left: 100px;
+}
+
+p{
+    font-size: 20px;
+}
+label{
+    font-size: 20px;
+}
+.form-control {
+    height:40px ;
+    font-size: 15px;
+}
+textarea{
+    height:100px ;
+    font-size: 15px;
+}
+
+
+
+
+
+

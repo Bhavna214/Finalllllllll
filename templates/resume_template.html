@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Resume Maker</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link href="../src/style1.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+        <link href="../src/bootstrap.min.css" rel="stylesheet">
+        <link href="../src/style.css" rel="stylesheet">
+       
+    </head>
+    <body>
+        <header class="header" style="background-color: #6C5CE7;">
+
+            <a href="#" class="logo"><i class="fas fa-magic"></i>design.</a>
+            
+            
+            <div class="fas fa-bars"></div>
+            
+            
+            <nav class="navbar">
+              <ul>
+                <li><a href="http://127.0.0.1:5000/">home</a></li>
+                <li><a href={{ url_for('list') }}>Hackathons</a></li>
+                <li><a href={{ url_for('cllg') }}>Organize a hackathon</a></li>
+                <li><a href={{ url_for('login') }}>Sign in</a></li>
+              </ul>
+            </nav>
+            
+            
+            </header>
+
+        
+
+
+        <section id="templates">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2>RESUME TEMPLATES</h2>
+                        <p>Choose your own style to make resume</p>
+                    </div>
+                    <div class="col-md-4 zoom">
+                        <a href="/resume_1">
+                            <img src="../src/img/resume1.png" style="width: 100%">
+                        </a>
+                    </div>
+                    <div class="col-md-4 zoom">
+                        <a href="/resume_2">
+                            <img src="../src/img/resume2.png" style="width: 100%">
+                        </a>
+                    </div>
+                    <div class="col-md-4 zoom">
+                        <a href="#">
+                            <img src="../src/img/comming_soon.jpg" style="width: 100%">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>

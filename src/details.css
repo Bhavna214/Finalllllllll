@@ -1,0 +1,55 @@
+.container .row button{
+    background: linear-gradient(to bottom, #6C5CE7, #311fb8);
+    color: white;
+    font-weight: 600;
+}
+
+.container{
+    background-color: #c9c5ec;
+    padding: 30px;
+    font-size: medium;
+    color: #6C5CE7;
+    max-height: fit-content;
+    width: 40%;
+    margin: auto;
+    text-align: center;
+    border: 3px solid violet;
+}
+.container{
+    margin-top: 7%;
+    width: 100%;
+}
+.row{
+    display: inline-flex;
+    /* align-items: center; */
+    justify-content: space-between;
+    width: 100%;
+}
+.col{
+    margin-left: 40px;
+}
+
+input{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    
+}
+
+.form-control{
+    border-radius: 30px;;
+}
+label{
+    float:left;
+}
+.loginredirect{
+    margin-top:20px;
+}
+.button.block{
+    display: block;
+    width: 200px;
+}
+.margin-auto{
+    margin: 0 auto;
+}
